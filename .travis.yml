@@ -18,7 +18,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r freelac
+  - zip -r freelac *
   - mkdir -p deploy
   - mv freelac.zip deploy/freelac.zip
 
